@@ -21,7 +21,15 @@
   
   
 <style>
-body{background-image:url("https://i.insider.com/5e3473e824306a4be82dc693?width=1136&format=jpeg")
+body{background-image:url("https://i.insider.com/5e3473e824306a4be82dc693?width=1136&format=jpeg");
+background-repeat:no-repeat;
+}
+
+#q1{
+  position:absolute;
+  left:0.5%;
+  top:295px;
+}
 </style>
 
   
@@ -32,20 +40,21 @@ body{background-image:url("https://i.insider.com/5e3473e824306a4be82dc693?width=
 </head>
 
 <body translate="no" >
-  <audio controls>
+  <audio id="correctsound" controls>
   <source src="https://brodybry.github.io/2052-7/Correct.m4a" type="audio/mpeg">
   Your browser does not support the audio tag.
 </audio>
 <button id="correct">Correct</button>
+<input id="q1"/>
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   
       <script id="rendered-js" >
-let Correct = document.getElementBId("correct");
+let correct = document.getElementById("correctsound");
 
 function playcorrect(){correct.play();}
 
-$("#Correct).click(playcorrect)
+$("#correct").click(playcorrect)
     </script>
 
   
